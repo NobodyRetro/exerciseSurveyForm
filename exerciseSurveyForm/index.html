@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Basics: Exercise Survey Form</title>
+    <meta name="description" content="The Survey Form Exercise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--
+    Form title
+    All content should be wrapped in a <form> tag
+    All inputs should have a "type".
+    All inputs should have a label.
+    Select menu should have five (5) options.
+    The form and all form elements should have the proper attributes for a successful form submission as if this were a working form.
+    Two (2) required inputs (name and department).
+    Change the width and height of the "Message" box.
+    Post a screenshot of your finished exercise in the #post-your-exercises channel in Discord-->
+
+  <body>
+    <form action="./done.php">
+      <h1>Employee Interests Survey Form</h1>
+      <span style="color: red">* notes a required field</span>
+      <br /><br />
+
+      <label name="name">Name:<span style="color: red">*</span></label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label name="department"
+        >Department:<span style="color: red">*</span></label
+      >
+      <input
+        id="department"
+        type="text"
+        placeholder="Enter your department"
+        required
+      /><br /><br />
+
+      <label for="tellUs">Tell us a little about yourself:</label><br />
+      <textarea name="tellUs" id="tellUs" rows="5" cols="40"></textarea
+      ><br /><br />
+
+      <label name="exercise">Do you exercise at home?</label>
+
+      <input name="exercise" id="yes" type="radio" value="yes" />
+      <label for="yes">Yes</label>
+
+      <input name="exercise" id="no" type="radio" value="no" />
+      <label for="no">No</label><br /><br />
+
+      <label for="read"
+        >How do you like to read about your favorite topics?</label
+      ><br /><br />
+
+      <input name="read" id="apps" type="checkbox" value="apps" />
+      <label for="apps">Phone Apps</label>
+
+      <input name="read" id="online" type="checkbox" value="online" />
+      <label for="online">Online</label>
+
+      <input name="read" id="books" type="checkbox" value="books" />
+      <label for="books">Books</label>
+
+      <input name="read" id="magazines" type="checkbox" value="magazines" />
+      <label for="magazines">Magazines</label><br /><br />
+
+      <label for="genre">What is your favorite movie genre?</label>
+      <select name="genre" id="genre">
+        <option value="action">Action</option>
+        <option value="horror">Horror</option>
+        <option value="thriller">Thriller</option>
+        <option value="romance">Romance</option>
+        <option value="comedy">Comedy</option></select
+      ><br /><br />
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </body>
+</html>
